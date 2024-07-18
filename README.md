@@ -1,1 +1,1 @@
-# C-11-team-1
+# This project is a simple implementation on a task management system.
