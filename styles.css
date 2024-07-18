@@ -344,6 +344,31 @@ section{
     /* margin-left:8%; */
 
 }
+.calendar-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+button {
+    margin: 5px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#calendarTitle {
+    margin: 0 10px;
+}
+
 footer{
     height:20vh;
     width: 100vw;

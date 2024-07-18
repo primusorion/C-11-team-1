@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     const calendarEl = document.querySelector('.calendar');
+    const calendarTitle = document.getElementById('calendarTitle');
     const monthNames = [
         'January', 'February', 'March', 'April', 'May', 'June',
         'July', 'August', 'September', 'October', 'November', 'December'
@@ -36,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
             tbl.appendChild(row);
         }
 
-        calendarEl.querySelector('h2').textContent = `${monthNames[month]} ${year}`;
+        calendarTitle.textContent = `${monthNames[month]} ${year}`;
     }
 
     function initCalendar() {
