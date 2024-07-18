@@ -64,3 +64,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     initCalendar();
 });
+function toggleTheme() {
+    document.body.classList.toggle('dark');
+}

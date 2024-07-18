@@ -7,43 +7,41 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
 </head>
 <body>
 <!-- header -->
-    <header class="header">
-        <img class="logo" src="Logo.jpg" >
-        <div class="logospace"></div>
-        <ul class="navbar">
-            <li><a href="#" class="home"><i class="ri-home-4-fill"></i></a></li>
-            <li><a href="#section1">Add Tasks</a></li>
-            <li><a href="#space-goals">Goals</a></li>
-            <li><a href="#space-tasks">Completed Tasks</a></li>
-            <li><a href="#space-about">About</a></li>
-        </ul>
+<header class="header">
+    <img class="logo" src="Logo.jpg" >
+    <div class="logospace"></div>
+    <ul class="navbar">
+        <li><a href="#" class="home"><i class="ri-home-4-fill"></i></a></li>
+        <li><a href="#section1">Add Tasks</a></li>
+        <li><a href="#space-goals">Goals</a></li>
+        <li><a href="#space-tasks">Completed Tasks</a></li>
+        <li><a href="#space-about">About</a></li>
+    </ul>
 
-        <div class="main">
-            <i class="ri-user-fill icon"></i>
-            <a href="#"  class="user">Sign-in</a>
-            <a href="#">Register</a>
-        </div>
-       
-    </header>
+    <div class="main">
+        <i class="ri-user-fill icon"></i>
+        <a href="#"  class="user">Sign-in</a>
+        <a href="#">Register</a>
+    </div>
+    <!-- Theme Toggle Button -->
+    <button id="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
+</header>
 
 <!-- Home Section -->
 <div id="space-top" ></div>
- <main>
+<main>
     <section id="section1" class="sections">
         <div class="myTask-section Home">
-            <span class="sec11">
-                <h1 class="today">Today Tasks</h1> 
-                <h1 class="date">
-                    <span class="date-display">Date</span>
-                </h1>
-            </span>
-            <div class=" taskBox">+ Create Task</div>
-
-
+                <span class="sec11">
+                    <h1 class="today">Today Tasks</h1>
+                    <h1 class="date">
+                        <span class="date-display">Date</span>
+                    </h1>
+                </span>
+            <div class="taskBox">+ Create Task</div>
         </div>
         <div class="calendar Home">
             <h1>Calendar</h1>
@@ -69,9 +67,8 @@
                 </tbody>
             </table>
         </div>
-
     </section>
-        <div id="space-goals" class="space"></div>
+    <div id="space-goals" class="space"></div>
 
     <section id="section2" class="sections">
         <h2 id="goals">MY Goals</h2>
@@ -86,7 +83,6 @@
                 <div class="sub-box">+ Create Task</div>
             </div>
         </div>
-
     </section>
     <div id="space-tasks" class="space"></div>
 
@@ -103,8 +99,6 @@
                 <div class="sub-box incomp">Incomplete Tasks</div>
             </div>
         </div>
-
-
     </section>
 
     <div id="space-about" class="space"></div>
@@ -123,15 +117,12 @@
                 <li>✔️ Customization</li>
                 <li>✔️ Scheduling</li>
             </div>
-
-
         </div>
-        
         <footer>
-         ...  Footer section  ...
-         </footer>
-
+            ... Footer section ...
+        </footer>
     </section>
-</body>
+</main>
 <script src="index.js"></script>
+</body>
 </html>
