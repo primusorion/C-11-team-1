@@ -68,3 +68,84 @@ function toggleTheme() {
     document.body.classList.toggle('dark');
     document.getElementById('logo').classList.toggle('logo-dark');
 }
+document.addEventListener('DOMContentLoaded', function() {
+    const addTaskInput = document.getElementById('addTaskInput');
+    const addTaskButton = document.getElementById('addTaskButton');
+    const taskContainer = document.querySelector('.taskBox');
+
+    addTaskButton.addEventListener('click', function() {
+        const taskText = addTaskInput.value.trim();
+        if (taskText) {
+            const taskElement = document.createElement('div');
+            taskElement.textContent = taskText;
+            taskElement.className = 'task-item';
+            taskContainer.appendChild(taskElement);
+            addTaskInput.value = '';
+        }
+    });
+});
+document.addEventListener('DOMContentLoaded', function() {
+    const addTaskButton = document.getElementById('addTaskButton');
+    const addTaskInput = document.getElementById('addTaskInput');
+    const taskBox = document.querySelector('.taskBox');
+
+    addTaskButton.addEventListener('click', function() {
+        const taskText = addTaskInput.value.trim();
+        if (taskText) {
+            const taskElement = document.createElement('div');
+            taskElement.textContent = taskText;
+            taskElement.className = 'task-item';
+            taskBox.appendChild(taskElement);
+            addTaskInput.value = '';
+        }
+    });
+});
+document.addEventListener('DOMContentLoaded', function() {
+    const addTaskButton = document.getElementById('addTaskButton');
+    const addTaskInput = document.getElementById('addTaskInput');
+    const taskBox = document.querySelector('.taskBox');
+
+    addTaskButton.addEventListener('click', function() {
+        const taskText = addTaskInput.value.trim();
+        if (taskText) {
+            const taskElement = document.createElement('div');
+            taskElement.textContent = taskText;
+            taskElement.className = 'task-item';
+            taskBox.appendChild(taskElement);
+            addTaskInput.value = '';
+        }
+    });
+});
+document.addEventListener('DOMContentLoaded', function () {
+    const addTaskButton = document.getElementById('addTaskButton');
+    const addTaskInput = document.getElementById('addTaskInput');
+    const taskBox = document.querySelector('.taskBox');
+
+    // Function to add task
+    function addTask() {
+        const taskText = addTaskInput.value.trim();
+        if (taskText) {
+            const taskElement = document.createElement('div');
+            taskElement.textContent = taskText;
+            taskElement.className = 'task-item';
+            taskBox.appendChild(taskElement);
+            addTaskInput.value = '';
+            addTaskInput.style.display = 'none'; // Hide input after adding task
+            addTaskButton.style.display = 'block'; // Show the add task button again
+        }
+    }
+
+    // Show input when the add task button is clicked
+    addTaskButton.addEventListener('click', function() {
+        addTaskInput.style.display = 'block';
+        addTaskButton.style.display = 'none'; // Hide the add task button
+        addTaskInput.focus(); // Focus on the input field
+    });
+
+    // Listen for Enter key press to add task
+    addTaskInput.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            addTask();
+        }
+    });
+});
