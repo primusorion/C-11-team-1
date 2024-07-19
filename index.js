@@ -66,4 +66,5 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 function toggleTheme() {
     document.body.classList.toggle('dark');
+    document.getElementById('logo').classList.toggle('logo-dark');
 }

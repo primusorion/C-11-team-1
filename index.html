@@ -11,8 +11,9 @@
 <body>
 <!-- header -->
 <header class="header">
-    <img class="logo" src="Logo.jpg" >
-    <div class="logospace"></div>
+    <div class="logospace">
+        <img class="logo logo-dark" id="logo" src="Logo.jpg" >
+    </div>
     <ul class="navbar">
         <li><a href="#" class="home"><i class="ri-home-4-fill"></i></a></li>
         <li><a href="#section1">Add Tasks</a></li>
@@ -23,11 +24,17 @@
 
     <div class="main">
         <i class="ri-user-fill icon"></i>
-        <a href="#"  class="user">Sign-in</a>
-        <a href="#">Register</a>
+        <a href="#" class="user">Sign-in</a>
     </div>
     <!-- Theme Toggle Button -->
-    <button id="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
+    <div class="theme-button">
+        <button onclick="toggleTheme()">
+            <label class="switch">
+                <input onclick="toggleTheme()" type="checkbox">
+                <span class="slider"></span>
+            </label>
+        </button>
+    </div>
 </header>
 
 <!-- Home Section -->
@@ -35,12 +42,12 @@
 <main>
     <section id="section1" class="sections">
         <div class="myTask-section Home">
-                <span class="sec11">
-                    <h1 class="today">Today Tasks</h1>
-                    <h1 class="date">
-                        <span class="date-display">Date</span>
-                    </h1>
-                </span>
+            <span class="sec11">
+                <h1 class="today">Today Tasks</h1>
+                <h1 class="date">
+                    <span class="date-display">Date</span>
+                </h1>
+            </span>
             <div class="taskBox">+ Create Task</div>
         </div>
         <div class="calendar Home">
